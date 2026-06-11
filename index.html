@@ -1186,7 +1186,7 @@ body {
 <section class="rsvp-section">
   <div class="rsvp-inner">
     <p class="rsvp-eyebrow">Rissa's response</p>
-    <h2 class="rsvp-title">May I ask you out, <em>Rissa?</em></h2>
+    <h2 class="rsvp-title">May I ask you out, <em>Rissa :D?</em></h2>
     <p class="rsvp-sub">Tap the button below to let Lans know you're in. One tap and the celebration is officially on.</p>
     <button class="rsvp-btn" id="rsvp-btn" onclick="sendRSVP()">
       <span class="btn-icon">🎓</span>
@@ -1255,9 +1255,9 @@ function sendRSVP() {
   const body = encodeURIComponent(
     'Hi Lans!\n\nI just saw your itinerary and I love it.\n\nYes, I accept the invitation! See you soon for our U & Me @ Umi celebration.\n\nLet\'s make it a day to remember. 🎓🍣\n\nWith love,\nRissa'
   );
-  const mailto = 'mailto:lancepascualagustin@gmail.com?subject=' + subject + '&body=' + body;
+  const gmailLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=lancepascualagustin@gmail.com&su=' + subject + '&body=' + body;
 
-  window.location.href = mailto;
+  window.open(gmailLink, '_blank');
 
   btn.textContent = '✓ Invitation Accepted!';
   btn.style.background = '#3a5f3a';
