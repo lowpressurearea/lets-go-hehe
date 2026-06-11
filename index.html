@@ -1251,13 +1251,9 @@ function sendRSVP() {
   const confirmed = document.getElementById('rsvp-confirmed');
   const note = document.getElementById('rsvp-note');
 
-  const subject = encodeURIComponent('I Accept! U & Me @ Umi — Rissa\'s RSVP');
-  const body = encodeURIComponent(
-    'Hi Lans!\n\nI just saw your itinerary and I love it.\n\nYes, I accept the invitation! See you soon for our U & Me @ Umi celebration.\n\nLet\'s make it a day to remember. 🎓🍣\n\nWith love,\nRissa'
-  );
-  const gmailLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=lancepascualagustin@gmail.com&su=' + subject + '&body=' + body;
+  const calendarLink = 'https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHZzdDlyaTViajJxOTRicjNtZXZjb2ZyaTAgbGFuY2VwYXNjdWFsYWd1c3RpbkBt&tmsrc=lancepascualagustin%40gmail.com';
 
-  window.open(gmailLink, '_blank');
+  window.open(calendarLink, '_blank');
 
   btn.textContent = '✓ Invitation Accepted!';
   btn.style.background = '#3a5f3a';
